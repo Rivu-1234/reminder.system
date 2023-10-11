@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modify Reminder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Modify Reminder</h1>
+        <form id="modifyReminderForm">
+            <div class="form-group">
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Select Subject:</label>
+                <select id="subject" required>
+                    <option value="">Select</option>
+                    <!-- Options will be autopopulated based on previous selections via JavaScript -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="reminder">Reminders:</label>
+                <select id="reminder" required>
+                    <option value="">Select</option>
+                    <!-- Options will be autopopulated based on previous selections via JavaScript -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Add description:</label>
+                <textarea id="description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="contactNo">Contact No:</label>
+                <input type="tel" id="contactNo" required>
+            </div>
+            <div class="form-group">
+                <label for="smsNo">SMS No:</label>
+                <input type="tel" id="smsNo" required>
+            </div>
+            <div class="form-group">
+                <label>Recur for next:</label><br>
+                <input type="checkbox" id="7days" value="7 Days" checked> 7 Days
+                <input type="checkbox" id="5days" value="5 Days" checked> 5 Days
+                <input type="checkbox" id="3days" value="3 Days" checked> 3 Days
+                <input type="checkbox" id="2days" value="2 Days" checked> 2 Days
+            </div>
+            <input type="submit" value="Modify Reminder">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
